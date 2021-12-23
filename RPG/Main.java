@@ -1,6 +1,5 @@
-package RPG;
 import java.util.Scanner;
-import java.util.Random;
+import rpg.*;
 
 public class Main {
     public static void main(String []args) {
@@ -9,22 +8,8 @@ public class Main {
         System.out.println("Let's make a new muppet!");
         System.out.println("What's your muppet's name? ");
         String name = scanner.nextLine();
-        int min = 8;
-        int max = 20;
+        rpg.Character newCharacter = new rpg.Character(name);
 
-        int strength = Utilities.randomNumber();
-        int intelligence = Utilities.randomNumber();
-        int dexterity = Utilities.randomNumber();
-        Character newCharacter = new Character(name, strength, intelligence, dexterity);
-
-        //System.out.println(newCharacter);
-
-        System.out.println(newCharacter.toString());
-
+        System.out.println(newCharacter);
     }
 }
-
-// 1) Write a function called randomNumber that accepts two integers as arguments. 
-// The arguments should be called min and max. 
-// The function should return a number within the range min and max.
-

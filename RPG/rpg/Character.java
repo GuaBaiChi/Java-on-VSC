@@ -1,4 +1,4 @@
-package RPG;
+package rpg;
 
 public class Character {
     private String name;
@@ -13,9 +13,9 @@ public class Character {
         this.name = name;
         this.experience = 0;
         this.level = 1;
-        this.strength = randomNumber(8,20);
-        this.intelligence = randomNumber(8,20);
-        this.dexterity = randomNumber(8,20);
+        this.strength = Utilities.randomNumber(8,20);
+        this.intelligence = Utilities.randomNumber(8,20);
+        this.dexterity = Utilities.randomNumber(8,20);
         this.health = this.strength + 10;
 
     }

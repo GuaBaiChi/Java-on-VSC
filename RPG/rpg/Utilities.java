@@ -1,4 +1,5 @@
-package RPG;
+package rpg;
+import java.util.Random;
 
 public class Utilities {
     private int min;
