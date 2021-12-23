@@ -16,8 +16,27 @@ public class Character {
         this.strength = Utilities.randomNumber(8,20);
         this.intelligence = Utilities.randomNumber(8,20);
         this.dexterity = Utilities.randomNumber(8,20);
-        this.health = this.strength + 10;
+        this.health = this.strength + 100;
 
+    }
+
+    public int physicalAttack() {
+        System.out.println(this.name + " attacks with a physical attack!");
+        return getStrength() + Utilities.randomNumber(1, this.getDexterity());
+    }
+
+    public int magicAttack() {
+        System.out.println(this.name + " attacks with a magic attack!");
+        return this.getLevel() * Utilities.randomNumber(0, getIntelligence());
+    }
+
+    public void heal() {
+        System.out.println(this.name + " heals!");
+        this.health += Utilities.randomNumber(1, getIntelligence());
+    }
+    
+    public void takeDamage(int damage) {
+        this.health -= damage;
     }
 
     public String getName() {
@@ -53,31 +72,3 @@ public class Character {
     }
     
 }
-
-// 2) Create a class called Character. 
-// It should have the following member data:
-// String name
-// int experience
-// int level
-// int health
-// int strength
-// int intelligence
-// int dexterity
-
-// Create a default constructor for Character which initializes experience to 0, 
-//level to 1, and strength, intelligence, dexterity to random numbers between 
-//the ranges 8-20. health should then be set to strength + 10.
-
-// 3) Create a function called gainXp. This function should take an int as an argument. 
-//When the function is called, it adds the int argument to experience, 
-//and if experience > level * 100 then increment level by 1 and reset experience.
-
-//4) Create a method called attack. 
-//It should do random + dexterity damage, where random is a random number between 0-10. 
-//Simply print the damage that would be done.
-//You get the idea. Build an RPG, or at least what you think the outline would be using OOP. 
-//Then build a menu that let's you create characters. 
-//Then build a different menu that let's you "fight" either other characters or Monsters 
-//(could be a chance to create a Monster class).
-
-//The main key to this is random number generation
