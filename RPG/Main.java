@@ -19,11 +19,11 @@ public class Main {
 
         System.out.println("Let's fight!");
 
-        System.out.println(name + " health: " + name.rpg.getHealth());
+        System.out.println(name + " health: " + newCharacter.getHealth());
         System.out.println(name + " health: " + name.getHealth());
         System.out.println(name + " health: " + rpg.name.getHealth());
         System.out.println(name + " health: " + name.getHealth());
-
+//commit
 
     }
 }
