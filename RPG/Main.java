@@ -9,21 +9,16 @@ public class Main {
         System.out.println("What's your muppet's name? ");
         String name = scanner.nextLine();
         rpg.Character newCharacter = new rpg.Character(name);
+
         String monster = "monster";
         rpg.Character monsterCharacter = new rpg.Character(monster);
+        
+        rpg.Explorer.Explore(Character newCharacter);
+        rpg.Explorer.Explore(Character name);
+        rpg.Explorer.Explore(rpg.Character newCharacter);
+        rpg.Explorer.Explore(rpg.Character name);
 
-        System.out.println("");
-        System.out.println(newCharacter);
-        System.out.println("");
-        System.out.println(monsterCharacter);
-
-        System.out.println("Let's fight!");
-
-        System.out.println(name + " health: " + newCharacter.getHealth());
-        System.out.println(name + " health: " + name.getHealth());
-        System.out.println(name + " health: " + rpg.name.getHealth());
-        System.out.println(name + " health: " + name.getHealth());
-//commit
+        
 
     }
 }
