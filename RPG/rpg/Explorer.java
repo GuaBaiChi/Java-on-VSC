@@ -40,7 +40,7 @@ public class Explorer {
             System.out.println("- - -");
             Encounter();
         } else if (answer.equals("yes")) {
-            BattleMenu.encounter();
+            BattleMenu.Encounter();
         } else {
             System.out.println("Sorry I didn't get that.");
             System.out.println("Maybe you had a stroke.");

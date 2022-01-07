@@ -3,7 +3,7 @@ package rpg;
 public class BattleMenu {
     private
     
-    public static void encounter() {
+    public static void Encounter() {
         System.out.println("");
         System.out.println(newCharacter);
         System.out.println("");
