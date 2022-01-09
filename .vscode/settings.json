@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "RPG",
         "HelloApp",
-        "RPG"
+        "list_of_stars"
     ]
 }
